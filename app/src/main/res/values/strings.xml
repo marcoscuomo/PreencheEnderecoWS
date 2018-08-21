@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Preenche Endereco</string>
+    <string name="app_name">Consuta Endereco</string>
     <string name="digite_cep">Digite o CEP</string>
     <string name="cep">CEP</string>
     <string name="Carregar" >Carregar</string>
