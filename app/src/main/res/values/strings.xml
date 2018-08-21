@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Preenche Endereco</string>
+    <string name="digite_cep">Digite o CEP</string>
+    <string name="cep">CEP</string>
+    <string name="Carregar" >Carregar</string>
+    <string name="tit_endereco">Endereço</string>
+    <string name="nova_consulta">Nova Consulta</string>
+    <string name="somente_numeros">Somente números, sem traço</string>
 </resources>
