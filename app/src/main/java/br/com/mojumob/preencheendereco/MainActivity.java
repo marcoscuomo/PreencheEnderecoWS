@@ -6,9 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -30,15 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //Inicializações
-        edtCep        = findViewById(R.id.edtCep);
-        btnCarregar   = findViewById(R.id.btnCarregar);
-        txtLogradouro = findViewById(R.id.txtLogradouro);
-        txtBairro     = findViewById(R.id.txtBairro);
-        txtCidade     = findViewById(R.id.txtCidade);
-        txtEstado     = findViewById(R.id.txtEstado);
-        isPesquisar   = true;
+        inicializaComponentes();
 
         //Iniciando o Retrofit
         retrofit = new Retrofit.Builder()
@@ -61,9 +51,19 @@ public class MainActivity extends AppCompatActivity {
                     btnCarregar.setText("Pesquisar");
                     isPesquisar = true;
                 }
-
             }
         });
+    }
+
+    private void inicializaComponentes() {
+        //Inicializações
+        edtCep        = findViewById(R.id.edtCep);
+        btnCarregar   = findViewById(R.id.btnCarregar);
+        txtLogradouro = findViewById(R.id.txtLogradouro);
+        txtBairro     = findViewById(R.id.txtBairro);
+        txtCidade     = findViewById(R.id.txtCidade);
+        txtEstado     = findViewById(R.id.txtEstado);
+        isPesquisar   = true;
     }
 
     private void limparCampos() {
@@ -98,6 +98,4 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-
 }
